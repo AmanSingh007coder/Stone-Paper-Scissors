@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0d75c0, #f50035);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.but {
+  width: 200px;
+  aspect-ratio: 1/1; 
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.but:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.but1 {
+  background-image: url("stone.png");
+}
+
+.but2 {
+  background-image: url("paper.png");
+}
+
+.but3 {
+  background-image: url("scissors.png");
+}
+
+.scoreboard {
+  margin-top: 40px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  font-size: 1.8rem;
+}
+
+.msgcontainer {
+  margin-top: 30px;
+  color: azure;
+  background: linear-gradient(90deg, #000000, #434343);
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: none;
+}
+
